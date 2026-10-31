@@ -1,10 +1,8 @@
 numpy
 opencv-python
-matplotlib
-pandas
-scikit-image
 Pillow
-tqdm
-torch
-torchvision
+transformers==4.48.3
 git+https://github.com/facebookresearch/segment-anything.git
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.5.1+cpu
+torchvision==0.20.1+cpu
