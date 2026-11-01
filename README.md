@@ -163,3 +163,14 @@ python scripts/task2_final_eval.py
 ```
 
 The baseline applies global Otsu thresholding to Lab lightness. The adaptive trial uses a `51 x 51` Gaussian neighborhood on Lab lightness with `C = -5`. GrabCut uses the Otsu mask as its initial foreground/background estimate. Random Forest variants use Lab color, multiscale intensity, edge, Hessian, and texture features. Spatial refinement applies color-guided local smoothing to probabilities. Cleanup variants post-process the thresholded masks. Auto-Context trains a second Random Forest on first-stage probability maps at a consistent working scale, and a shape classifier keeps egg-like components. The final method (Trial 11) scores macro IoU `0.8089` and Dice `0.8531` on the 20 evaluation images (dev out-of-fold: IoU `0.7764`, Dice `0.8476`); it still fails when a white egg sits on a white surface. Cross-validation scripts keep similarity groups together. Trial masks, overlays, and per-image metrics are saved under the ignored `outputs/task2/` directory; results and limitations are in `reports/task2_experiment_log.md`.
+
+
+## Task 3: Evaluation and Analysis
+
+Score the final Task 2 masks against the Task 1 masks and regenerate the tables and figures (requires the dev out-of-fold masks from `task2_component_filter.py` and the eval masks from `task2_final_eval.py`):
+
+```powershell
+python scripts/task3_evaluation.py
+```
+
+The script computes IoU, Dice, precision, recall, boundary F1, HD95 and egg-level detection with bootstrap intervals, groups images into failure categories, and plots the error drivers plus failure galleries. On the 20 evaluation images the final method reaches macro IoU `0.8089` and Dice `0.8531` (dev out-of-fold: `0.7764` and `0.8476`). Errors concentrate on white eggs against white surroundings, where the egg-to-background colour difference is low; touching eggs are not separated. Tables and figures are saved under `reports/task3/`, and the written analysis is in `reports/task3_evaluation_report.md`.

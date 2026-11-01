@@ -8,3 +8,5 @@ torch==2.5.1+cpu
 torchvision==0.20.1+cpu
 open_clip_torch==3.3.0
 scikit-learn
+matplotlib
+scipy
