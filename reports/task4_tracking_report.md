@@ -1,6 +1,6 @@
 # Task 4: Video Tracking
 
-The final Task 2 pipeline (Trial 11) is run on the assignment video (https://www.youtube.com/watch?v=Y4JyV94y2_A, saved as `video.mp4`) and extended with candidate filtering and a tracker so that each egg keeps its own identity. Per-frame tracks are in `outputs/task4/tracks.csv`; figures are in `reports/task4/figures/`.
+The final Task 2 pipeline (Trial 11) is run on the assignment video (https://www.youtube.com/watch?v=Y4JyV94y2_A, saved as `video.mp4`) and extended with candidate filtering and a tracker so that each egg keeps its own identity. Per-frame tracks are in `outputs/task4/tracks.csv`; figures are in `reports/task4/figures/`. The annotated output video is on Google Drive: https://drive.google.com/file/d/1J1LyZ5amhyR-DFS8jQ2IINm2QukMPneT/view?usp=sharing
 
 ## The video
 

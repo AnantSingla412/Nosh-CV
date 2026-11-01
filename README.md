@@ -4,10 +4,11 @@ Computer vision intern assignment work for egg segmentation, evaluation, and vid
 
 ## Reports
 
+- Combined report for all four tasks (PDF): [`CV_Intern_Task_Report.pdf`](CV_Intern_Task_Report.pdf).
 - Task 2 experiment log (trials, parameters, dev results, final evaluation): [`reports/task2_experiment_log.pdf`](reports/task2_experiment_log.pdf), Markdown source in [`reports/task2_experiment_log.md`](reports/task2_experiment_log.md).
 - Task 3 evaluation and analysis (metrics, failure galleries, plots): [`reports/task3_evaluation_report.pdf`](reports/task3_evaluation_report.pdf), Markdown source in [`reports/task3_evaluation_report.md`](reports/task3_evaluation_report.md).
 - Task 4 video tracking (method, iterations, results, limitations): [`reports/task4_tracking_report.md`](reports/task4_tracking_report.md).
-Output video :- `outputs/task4/tracked_eggs.mp4`
+Output video :- `outputs/task4/tracked_eggs.mp4` ([Google Drive](https://drive.google.com/file/d/1J1LyZ5amhyR-DFS8jQ2IINm2QukMPneT/view?usp=sharing))
 ## Dataset
 
 The local export is expected at `Dataset/egg.v1i.folder/`. It contains 110 JPEG images:
@@ -183,7 +184,7 @@ The script computes IoU, Dice, precision, recall, boundary F1, HD95 and egg-leve
 
 ## Task 4: Video Tracking
 
-Output video :- `outputs/task4/tracked_eggs.mp4`
+Output video :- `outputs/task4/tracked_eggs.mp4` ([Google Drive](https://drive.google.com/file/d/1J1LyZ5amhyR-DFS8jQ2IINm2QukMPneT/view?usp=sharing))
 
 Run the stages in order from the repository root:
 
