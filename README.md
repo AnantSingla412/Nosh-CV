@@ -2,6 +2,11 @@
 
 Computer vision intern assignment work for egg segmentation, evaluation, and video tracking.
 
+## Reports
+
+- Task 2 experiment log (trials, parameters, dev results, final evaluation): [`reports/task2_experiment_log.pdf`](reports/task2_experiment_log.pdf), Markdown source in [`reports/task2_experiment_log.md`](reports/task2_experiment_log.md).
+- Task 3 evaluation and analysis (metrics, failure galleries, plots): [`reports/task3_evaluation_report.pdf`](reports/task3_evaluation_report.pdf), Markdown source in [`reports/task3_evaluation_report.md`](reports/task3_evaluation_report.md).
+
 ## Dataset
 
 The local export is expected at `Dataset/egg.v1i.folder/`. It contains 110 JPEG images:
