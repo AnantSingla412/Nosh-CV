@@ -1,0 +1,29 @@
+image_a,image_b,cosine_similarity,review_label,review_note
+not_damaged_78,not_damaged_27,0.987935,same_scene,Matching egg and rock layout
+not_damaged_124,not_damaged_135,0.978973,same_scene,Same boiling pan scene
+not_damaged_105,not_damaged_121,0.978184,same_scene,Same countertop and three-egg setup
+not_damaged_105,not_damaged_134,0.975886,same_scene,Same countertop and egg setup
+not_damaged_113,not_damaged_114,0.974053,same_scene,Same pan and two-egg scene
+not_damaged_144,not_damaged_148,0.971428,same_scene,Same countertop scene
+not_damaged_121,not_damaged_134,0.970048,same_scene,Same countertop and egg setup
+not_damaged_148,not_damaged_136,0.967690,same_scene,Same countertop and egg setup
+not_damaged_105,not_damaged_148,0.964119,same_scene,Same countertop and egg setup
+not_damaged_128,not_damaged_129,0.963413,same_scene,Same pan and two-egg scene
+not_damaged_1,not_damaged_25,0.962383,same_scene,Same dark hand-held egg setup
+not_damaged_114,not_damaged_129,0.960706,same_scene,Same pan and two-egg scene
+not_damaged_142,not_damaged_144,0.958133,same_scene,Same countertop scene
+not_damaged_142,not_damaged_148,0.958083,same_scene,Same countertop scene
+not_damaged_134,not_damaged_148,0.957874,same_scene,Same countertop scene
+not_damaged_105,not_damaged_136,0.957336,same_scene,Same countertop and egg setup
+not_damaged_121,not_damaged_148,0.956437,same_scene,Same countertop scene
+not_damaged_135,not_damaged_145,0.955421,same_scene,Known repeated unlabeled scene
+not_damaged_37,not_damaged_55,0.955334,different_scene,Different fabric and egg scenes
+not_damaged_148,not_damaged_115,0.955267,same_scene,Same countertop scene
+not_damaged_124,not_damaged_145,0.955196,same_scene,Known repeated unlabeled scene
+not_damaged_144,not_damaged_115,0.954231,same_scene,Same countertop scene
+not_damaged_121,not_damaged_136,0.953969,same_scene,Same countertop and egg setup
+not_damaged_146,not_damaged_33,0.953865,different_scene,Different gray surfaces and egg scenes
+not_damaged_142,not_damaged_136,0.951951,same_scene,Same countertop and egg setup
+not_damaged_121,not_damaged_132,0.951282,same_scene,Same countertop and egg setup
+not_damaged_105,not_damaged_142,0.950712,same_scene,Same countertop and egg setup
+not_damaged_132,not_damaged_134,0.950561,same_scene,Same countertop and egg setup
