@@ -6,7 +6,8 @@ Computer vision intern assignment work for egg segmentation, evaluation, and vid
 
 - Task 2 experiment log (trials, parameters, dev results, final evaluation): [`reports/task2_experiment_log.pdf`](reports/task2_experiment_log.pdf), Markdown source in [`reports/task2_experiment_log.md`](reports/task2_experiment_log.md).
 - Task 3 evaluation and analysis (metrics, failure galleries, plots): [`reports/task3_evaluation_report.pdf`](reports/task3_evaluation_report.pdf), Markdown source in [`reports/task3_evaluation_report.md`](reports/task3_evaluation_report.md).
-
+- Task 4 video tracking (method, iterations, results, limitations): [`reports/task4_tracking_report.md`](reports/task4_tracking_report.md).
+Output video :- `outputs/task4/tracked_eggs.mp4`
 ## Dataset
 
 The local export is expected at `Dataset/egg.v1i.folder/`. It contains 110 JPEG images:
@@ -179,3 +180,18 @@ python scripts/task3_evaluation.py
 ```
 
 The script computes IoU, Dice, precision, recall, boundary F1, HD95 and egg-level detection with bootstrap intervals, groups images into failure categories, and plots the error drivers plus failure galleries. On the 20 evaluation images the final method reaches macro IoU `0.8089` and Dice `0.8531` (dev out-of-fold: `0.7764` and `0.8476`). Errors concentrate on white eggs against white surroundings, where the egg-to-background colour difference is low; touching eggs are not separated. Tables and figures are saved under `reports/task3/`, and the written analysis is in `reports/task3_evaluation_report.md`.
+
+## Task 4: Video Tracking
+
+Output video :- `outputs/task4/tracked_eggs.mp4`
+
+Run the stages in order from the repository root:
+
+```powershell
+python scripts/task4_detect.py
+python scripts/task4_track.py
+python scripts/task4_plots.py
+python scripts/task4_evaluate.py
+```
+
+`task4_detect.py` finds egg candidates in every frame and segments them with the final Task 2 pipeline; the first run trains the Task 2 model on all dev images and caches it under `.venv/model_cache/` (about two minutes; it needs the Auto-Context out-of-fold probabilities in `outputs/task2/`, so run `task2_pixel_classifier_autocontext.py` first, as for `task2_final_eval.py`), and the detection pass takes about 20 minutes on CPU. `task4_track.py` links the detections into two persistent egg tracks with a Kalman filter and writes the annotated video `outputs/task4/tracked_eggs.mp4` and `outputs/task4/tracks.csv`. `task4_plots.py` draws the trajectory and track-state figures, and `task4_evaluate.py` compares the tracked masks with Task 1 on every 20th egg frame (it runs the Task 1 models on those frames, about 20 minutes on CPU). Two egg tracks span the whole egg segment (`32 s`), including the stretches where a hand holds one of the eggs, and the tracked masks agree with Task 1 at macro IoU `0.913` on the sampled frames. 

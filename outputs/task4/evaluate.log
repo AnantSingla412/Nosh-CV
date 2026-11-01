@@ -1,0 +1,53 @@
+The cache for model files in Transformers v4.22.0 has been updated. Migrating your old cache. This is a one-time only operation. You can interrupt this and resume the migration later on by calling `transformers.utils.move_cache()`.
+0it [00:00, ?it/s]0it [00:00, ?it/s]
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.48, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+Device set to use cpu
+D:\Nosh Robotics\.venv\lib\site-packages\segment_anything\build_sam.py:105: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state_dict = torch.load(f)
+task1 1/39 frame 221: 2 eggs
+task1 2/39 frame 241: 2 eggs
+task1 3/39 frame 261: 2 eggs
+task1 4/39 frame 281: 2 eggs
+task1 5/39 frame 301: 2 eggs
+task1 6/39 frame 321: 2 eggs
+task1 7/39 frame 341: 2 eggs
+task1 8/39 frame 361: 2 eggs
+task1 9/39 frame 381: 2 eggs
+task1 10/39 frame 401: 2 eggs
+task1 11/39 frame 421: 2 eggs
+task1 12/39 frame 441: 2 eggs
+task1 13/39 frame 461: 2 eggs
+task1 14/39 frame 481: 2 eggs
+task1 15/39 frame 501: 2 eggs
+task1 16/39 frame 521: 2 eggs
+task1 17/39 frame 541: 2 eggs
+task1 18/39 frame 561: 2 eggs
+task1 19/39 frame 581: 2 eggs
+task1 20/39 frame 601: 2 eggs
+task1 21/39 frame 621: 2 eggs
+task1 22/39 frame 641: 2 eggs
+task1 23/39 frame 661: 1 eggs
+task1 24/39 frame 681: 1 eggs
+task1 25/39 frame 701: 2 eggs
+task1 26/39 frame 721: 2 eggs
+task1 27/39 frame 741: 1 eggs
+task1 28/39 frame 761: 2 eggs
+task1 29/39 frame 781: 1 eggs
+task1 30/39 frame 801: 2 eggs
+task1 31/39 frame 821: 2 eggs
+task1 32/39 frame 841: 1 eggs
+task1 33/39 frame 861: 2 eggs
+task1 34/39 frame 881: 2 eggs
+task1 35/39 frame 901: 2 eggs
+task1 36/39 frame 921: 2 eggs
+task1 37/39 frame 941: 2 eggs
+task1 38/39 frame 961: 2 eggs
+task1 39/39 frame 981: 2 eggs
+frames 39; both found eggs in 39; Task 1 found none in 0; tracker found none in 0
+  macro iou (frames where both found eggs): 0.9131
+  macro dice (frames where both found eggs): 0.9461
+  macro precision (frames where both found eggs): 0.9747
+  macro recall (frames where both found eggs): 0.9375
+  per-egg best IoU, visible: mean 0.967 median 0.987 n=65; matched at IoU>=0.5: 0.98
+  per-egg best IoU, partial: mean 0.586 median 0.720 n=5; matched at IoU>=0.5: 0.60
+  tracker eggs matched to Task 1 at IoU>=0.5: 67/70; Task 1 eggs total 73
